@@ -64,9 +64,10 @@ Will result in:
     Arguments: [
       1,
       2
-    ]
+    ],
+    ReturnValue: response
   }
 ]
 ```
-<sup><a href='/src/Tests/Tests.Test.verified.txt#L1-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Test.verified.txt' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.Test.verified.txt#L1-L10' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Test.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
