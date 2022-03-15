@@ -1,0 +1,9 @@
+﻿[
+  {
+    Method: ITarget.Method(int a, int b),
+    Arguments: [
+      1,
+      2
+    ]
+  }
+]
