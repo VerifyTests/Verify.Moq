@@ -32,7 +32,7 @@ public interface ITarget
 <sup><a href='/src/Tests/ITarget.cs#L1-L4' title='Snippet source file'>snippet source</a> | <a href='#snippet-ITarget.cs' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-It `.ReceivedCalls()` can be verified:
+The Mock and its invocations can then be verified:
 
 <!-- snippet: ReceivedCalls -->
 <a id='snippet-receivedcalls'></a>
