@@ -10,7 +10,7 @@ public class Tests
     {
         var mock = new Mock<ITarget>();
 
-        mock.Setup(library => library.Method(1,2))
+        mock.Setup(_ => _.Method(It.IsAny<int>(), It.IsAny<int>()))
             .Returns("response");
 
         var target = mock.Object;
