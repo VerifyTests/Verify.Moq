@@ -1,6 +1,6 @@
 # <img src="/src/icon.png" height="30px"> Verify.Moq
 
-[![Build status](https://ci.appveyor.com/api/projects/status/2yqj2feuuhlb1kf0?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-Moq)
+[![Build status](https://ci.appveyor.com/api/projects/status/07apa0wm0lxulr5o?svg=true)](https://ci.appveyor.com/project/SimonCropp/Verify-Moq)
 [![NuGet Status](https://img.shields.io/nuget/v/Verify.Moq.svg)](https://www.nuget.org/packages/Verify.Moq/)
 
 Adds [Verify](https://github.com/VerifyTests/Verify) support for verifying [Moq](https://github.com/moq/moq4) types.
