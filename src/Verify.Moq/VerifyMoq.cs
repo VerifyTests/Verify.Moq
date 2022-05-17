@@ -3,13 +3,11 @@
 public static class VerifyMoq
 {
     public static void Enable() =>
-        VerifierSettings.ModifySerialization(settings =>
-        {
-            settings.AddExtraSettings(serializerSettings =>
+        VerifierSettings
+            .AddExtraSettings(settings =>
             {
-                var converters = serializerSettings.Converters;
+                var converters = settings.Converters;
                 converters.Add(new InvocationConverter());
                 converters.Add(new MockConverter());
             });
-        });
 }
