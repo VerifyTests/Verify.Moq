@@ -6,10 +6,10 @@ class InvocationConverter :
     public override void Write(VerifyJsonWriter writer, IInvocation invocation)
     {
         writer.WriteStartObject();
-        writer.WriteProperty(invocation, invocation.Method, "Method");
-        writer.WriteProperty(invocation, invocation.Arguments, "Arguments");
-        writer.WriteProperty(invocation, invocation.ReturnValue, "ReturnValue");
-        writer.WriteProperty(invocation, invocation.Exception, "Exception");
+        writer.WriteMember(invocation, invocation.Method, "Method");
+        writer.WriteMember(invocation, invocation.Arguments, "Arguments");
+        writer.WriteMember(invocation, invocation.ReturnValue, "ReturnValue");
+        writer.WriteMember(invocation, invocation.Exception, "Exception");
         writer.WriteEndObject();
     }
 }
