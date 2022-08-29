@@ -13,11 +13,16 @@ https://nuget.org/packages/Verify.Moq/
 
 ## Usage
 
-Before any tests have run call:
-
+<!-- snippet: Enable -->
+<a id='snippet-enable'></a>
+```cs
+[ModuleInitializer]
+public static void Init()
+{
+    VerifyMoq.Enable();
 ```
-VerifyMoq.Enable();
-```
+<sup><a href='/src/Tests/ModuleInitializer.cs#L3-L10' title='Snippet source file'>snippet source</a> | <a href='#snippet-enable' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
 
 Given an interface:
 
