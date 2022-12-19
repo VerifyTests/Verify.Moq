@@ -2,7 +2,9 @@
 
 public static class VerifyMoq
 {
-    public static void Enable() =>
+    public static void Enable()
+    {
+        InnerVerifier.ThrowIfVerifyHasBeenRun();
         VerifierSettings
             .AddExtraSettings(settings =>
             {
@@ -10,4 +12,5 @@ public static class VerifyMoq
                 converters.Add(new InvocationConverter());
                 converters.Add(new MockConverter());
             });
+    }
 }
