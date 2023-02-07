@@ -2,7 +2,7 @@
 
 public static class VerifyMoq
 {
-    public static bool Initialized {get; private set; }
+    public static bool Initialized { get; private set; }
 
     [Obsolete("Use Initialize()")]
     public static void Enable() =>
