@@ -1,6 +1,4 @@
-﻿using Moq;
-
-class InvocationConverter :
+﻿class InvocationConverter :
     WriteOnlyJsonConverter<IInvocation>
 {
     public override void Write(VerifyJsonWriter writer, IInvocation invocation)
