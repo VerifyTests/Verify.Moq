@@ -5,10 +5,10 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Argon" Version="0.5.2" />
+    <PackageReference Include="Polyfill" Version="1.14.0" PrivateAssets="All" />
     <PackageReference Include="Verify" Version="19.12.1" />
     <PackageReference Include="ProjectDefaults" Version="1.0.90" PrivateAssets="all" />
     <PackageReference Include="Moq" Version="4.18.4" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" Condition="$(Configuration) == 'Release'" />
-    <PackageReference Include="PolySharp" Version="1.13.1" PrivateAssets="All" />
   </ItemGroup>
 </Project>
