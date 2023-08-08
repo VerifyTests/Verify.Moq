@@ -8,7 +8,7 @@
     <PackageReference Include="Polyfill" Version="1.26.0" PrivateAssets="All" />
     <PackageReference Include="Verify" Version="20.6.0" />
     <PackageReference Include="ProjectDefaults" Version="1.0.91" PrivateAssets="all" />
-    <PackageReference Include="Moq" Version="4.18.4" />
+    <PackageReference Include="Moq" Version="4.20.1" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" Condition="$(Configuration) == 'Release'" />
   </ItemGroup>
 </Project>
