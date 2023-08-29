@@ -6,7 +6,7 @@
   <ItemGroup>
     <PackageReference Include="Argon" Version="0.7.2" />
     <PackageReference Include="Polyfill" Version="1.26.0" PrivateAssets="All" />
-    <PackageReference Include="Verify" Version="20.8.1" />
+    <PackageReference Include="Verify" Version="20.8.2" />
     <PackageReference Include="ProjectDefaults" Version="1.0.91" PrivateAssets="all" />
     <PackageReference Include="Moq" Version="4.20.69" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" Condition="$(Configuration) == 'Release'" />
