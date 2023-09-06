@@ -5,7 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Argon" Version="0.7.2" />
-    <PackageReference Include="Polyfill" Version="1.27.1" PrivateAssets="All" />
+    <PackageReference Include="Polyfill" Version="1.27.2" PrivateAssets="All" />
     <PackageReference Include="Verify" Version="21.0.0" />
     <PackageReference Include="ProjectDefaults" Version="1.0.93" PrivateAssets="all" />
     <PackageReference Include="Moq" Version="4.20.69" />
