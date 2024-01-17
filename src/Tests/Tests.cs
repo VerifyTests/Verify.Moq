@@ -1,6 +1,5 @@
 ﻿using Moq;
 
-[UsesVerify]
 public class Tests
 {
     #region ReceivedCalls
