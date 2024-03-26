@@ -17,13 +17,13 @@ https://nuget.org/packages/Verify.Moq/
 ## Usage
 
 <!-- snippet: Enable -->
-<a id='snippet-enable'></a>
+<a id='snippet-Enable'></a>
 ```cs
 [ModuleInitializer]
 public static void Init() =>
     VerifyMoq.Initialize();
 ```
-<sup><a href='/src/Tests/ModuleInitializer.cs#L3-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-enable' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/ModuleInitializer.cs#L3-L9' title='Snippet source file'>snippet source</a> | <a href='#snippet-Enable' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Given an interface:
@@ -42,7 +42,7 @@ public interface ITarget
 The Mock and its invocations can then be verified:
 
 <!-- snippet: ReceivedCalls -->
-<a id='snippet-receivedcalls'></a>
+<a id='snippet-ReceivedCalls'></a>
 ```cs
 [Fact]
 public Task Test()
@@ -57,7 +57,7 @@ public Task Test()
     return Verify(mock);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L5-L20' title='Snippet source file'>snippet source</a> | <a href='#snippet-receivedcalls' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L5-L20' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in:
