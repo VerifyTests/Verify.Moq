@@ -1,6 +1,4 @@
-﻿using Moq;
-
-public class Tests
+﻿public class Tests
 {
     #region ReceivedCalls
 
