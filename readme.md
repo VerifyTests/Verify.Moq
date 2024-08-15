@@ -57,7 +57,7 @@ public Task Test()
     return Verify(mock);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L5-L20' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L3-L18' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Will result in:
