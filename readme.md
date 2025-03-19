@@ -44,7 +44,7 @@ The Mock and its invocations can then be verified:
 <!-- snippet: ReceivedCalls -->
 <a id='snippet-ReceivedCalls'></a>
 ```cs
-[Fact]
+[Test]
 public Task Test()
 {
     var mock = new Mock<ITarget>();
@@ -57,10 +57,10 @@ public Task Test()
     return Verify(mock);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L3-L18' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L4-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
-Will result in:
+Results in:
 
 <!-- snippet: Tests.Test.verified.txt -->
 <a id='snippet-Tests.Test.verified.txt'></a>
@@ -68,13 +68,62 @@ Will result in:
 [
   {
     Method: ITarget.Method(int a, int b),
-    Arguments: [
-      1,
-      2
-    ],
+    Arguments: {
+      Arguments: {
+        a: 1,
+        b: 2
+      }
+    },
     ReturnValue: response
   }
 ]
 ```
-<sup><a href='/src/Tests/Tests.Test.verified.txt#L1-L10' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Test.verified.txt' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.Test.verified.txt#L1-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.Test.verified.txt' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
+
+
+## Scrubbing Arguments
+
+Arguments can be scrubbed by name:
+
+<!-- snippet: ScrubArguments -->
+<a id='snippet-ScrubArguments'></a>
+```cs
+[Test]
+public Task ScrubArguments()
+{
+    var mock = new Mock<ITarget>();
+
+    mock.Setup(_ => _.Method(It.IsAny<int>(), It.IsAny<int>()))
+        .Returns("response");
+
+    var target = mock.Object;
+    target.Method(1, 2);
+    return Verify(mock)
+        .ScrubMember("a");
+}
+```
+<sup><a href='/src/Tests/Tests.cs#L21-L37' title='Snippet source file'>snippet source</a> | <a href='#snippet-ScrubArguments' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+
+Results in:
+
+<!-- snippet: Tests.ScrubArguments.verified.txt -->
+<a id='snippet-Tests.ScrubArguments.verified.txt'></a>
+```txt
+[
+  {
+    Method: ITarget.Method(int a, int b),
+    Arguments: {
+      Arguments: {
+        a: {Scrubbed},
+        b: 2
+      }
+    },
+    ReturnValue: response
+  }
+]
+```
+<sup><a href='/src/Tests/Tests.ScrubArguments.verified.txt#L1-L12' title='Snippet source file'>snippet source</a> | <a href='#snippet-Tests.ScrubArguments.verified.txt' title='Start of snippet'>anchor</a></sup>
+<!-- endSnippet -->
+

@@ -3,7 +3,7 @@
     Method: ITarget.Method(int a, int b),
     Arguments: {
       Arguments: {
-        a: 1,
+        a: {Scrubbed},
         b: 2
       }
     },
