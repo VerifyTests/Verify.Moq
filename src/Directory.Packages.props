@@ -8,7 +8,7 @@
     <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
     <PackageVersion Include="Moq" Version="4.20.72" />
     <PackageVersion Include="NUnit3TestAdapter" Version="5.0.0" />
-    <PackageVersion Include="Polyfill" Version="7.22.0" />
+    <PackageVersion Include="Polyfill" Version="7.23.0" />
     <PackageVersion Include="ProjectDefaults" Version="1.0.149" />
     <PackageVersion Include="Verify" Version="28.16.0" />
     <PackageVersion Include="Verify.NUnit" Version="28.16.0" />
