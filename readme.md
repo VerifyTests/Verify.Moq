@@ -9,9 +9,9 @@ Adds [Verify](https://github.com/VerifyTests/Verify) support for verifying [Moq]
 **See [Milestones](../../milestones?state=closed) for release notes.**
 
 
-## NuGet package
+## NuGet
 
-https://nuget.org/packages/Verify.Moq/
+ * https://nuget.org/packages/Verify.Moq
 
 
 ## Usage
