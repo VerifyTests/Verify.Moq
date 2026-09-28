@@ -1,4 +1,5 @@
-﻿[TestFixture]
+﻿namespace VerifyMoqTests;
+
 public class Tests
 {
     #region ReceivedCalls

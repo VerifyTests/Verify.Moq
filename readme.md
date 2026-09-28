@@ -71,7 +71,7 @@ public Task Test()
     return Verify(mock);
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L4-L19' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L5-L20' title='Snippet source file'>snippet source</a> | <a href='#snippet-ReceivedCalls' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in:
@@ -117,7 +117,7 @@ public Task ScrubArguments()
         .ScrubMember("a");
 }
 ```
-<sup><a href='/src/Tests/Tests.cs#L21-L37' title='Snippet source file'>snippet source</a> | <a href='#snippet-ScrubArguments' title='Start of snippet'>anchor</a></sup>
+<sup><a href='/src/Tests/Tests.cs#L22-L38' title='Snippet source file'>snippet source</a> | <a href='#snippet-ScrubArguments' title='Start of snippet'>anchor</a></sup>
 <!-- endSnippet -->
 
 Results in:
